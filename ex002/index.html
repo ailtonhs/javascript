@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interagindo com botão</title>
+    <style>
+        body {
+            background-color: rgb(110, 110, 201);
+        }
+
+        header h1 {
+            text-align: center;
+        }
+        
+        section {
+            text-align: center;
+        }
+
+        section button {
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 18px black;
+        }
+
+        footer {
+            text-align: center;
+            font-style: italic;
+            color: white;
+            font-size: 12px;
+            padding-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Interagindo com um botão</h1>
+    </header>
+
+    <section>
+        <button onclick="clicar()">Clique em mim!</button>
+    </section>
+
+    <footer>
+        <p>&copy; Ailton Henrique</p>
+    </footer>
+
+    <script>
+        function clicar() {
+            alert('Você clicou no botão!')
+        }
+    </script>
+</body>
+</html>
