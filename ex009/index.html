@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Clique</title>
+    <style>
+        body {
+            background-color: rgb(96, 96, 187);
+        }
+
+        header {
+            text-align: center;
+        }
+
+        section {
+            text-align: center;
+        }
+
+        section button {
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 18px black;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 400px;
+            font-style: italic;
+            font-size: 10pt;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Contador de cliques</h1>
+    </header>
+
+    <section>
+        <button onclick="inicio()">Clique em mim</button>
+        <button onclick="zerar()">Zerar o contador</button>
+        <p>O contador está com <mark>0</mark> cliques.</p>
+    </section>
+
+    <footer>
+        <p>&copy; Ailton Henrique</p>
+    </footer>
+
+    <script>
+        let contador = 0;
+        let res = document.getElementsByTagName('p')[0]
+        
+        function inicio() {
+            contador ++
+            res.innerHTML = `O contador está com <mark>${contador}</mark> cliques.`
+        }
+
+        function zerar() {
+            contador = 0;
+            res.innerHTML = `O contador está com <mark>${contador}</mark> cliques.`
+        }
+        
+
+    </script>
+</body>
+
+</html>
