@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados com JS</title>
+    <style>
+        body {
+            background-color: rgb(106, 106, 192);
+        }
+
+        header {
+            text-align: center;
+        }
+
+        section {
+            text-align: center;
+        }
+        section button {
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px black;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            font-style: italic;
+            font-size: 15px;
+            padding-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trabalhando com Dados</h1>
+    </header>
+
+    <section>
+        <button onclick="clicar()">Clique para começar</button>
+        <p id="demo">Aqui vai aparecer o resultado...</p>
+    </section>
+
+    <footer>
+        <p>&copy; Ailton Henrique</p>
+    </footer>
+
+    <script>
+        function clicar() {
+            let nome = prompt('Qual é seu nome?');
+            let res = document.getElementById('demo');
+
+            res.innerHTML = `Olá, <b>${nome}</b> É um grande prazer te conhecer &#x1F60A`
+        }
+    </script>
+</body>
+</html>

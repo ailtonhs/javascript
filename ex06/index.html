@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados JS</title>
+    <style>
+        body {
+            background-color: rgb(147, 147, 218);
+        }
+
+        header {
+            text-align: center;
+        }
+
+        section {
+            text-align: center;
+        }
+
+        section button {
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 18px black;
+        }
+
+        footer {
+            text-align: center;
+            font-style: italic;
+            font-size: 12px;
+            color: white;
+            padding: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Somando dois números</h1>
+    </header>
+
+    <section>
+        <button onclick="somar()">Iniciar a soma</button>
+        <p id="demo">O resultado vem aqui...</p>
+    </section>
+
+    <footer>
+        <p>&copy; Ailton Henrique</p>
+    </footer>
+
+    <script>
+        function somar() {
+            let num1 = Number(prompt('Digite um número:'));
+            let num2 = Number(prompt('Digite outro número:'));
+            let soma = num1 + num2;
+
+            let res = document.querySelector('#demo');
+
+            res.innerHTML = `A soma entre <mark>${num1}</mark> e <mark>${num2}</mark> é igual a <b>${soma}</b>!`
+        }
+    </script>
+</body>
+</html>
