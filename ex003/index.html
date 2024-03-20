@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com dados</title>
+    <style>
+        body {
+            background-color: rgb(103, 103, 230);
+        }
+
+        header {
+            text-align: center;
+            color: white;
+        }
+
+        section {
+            text-align: center;
+        }
+        section button {
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 18px black;
+        }
+
+        footer {
+            text-align: center;
+            font-style: italic;
+            font-size: 12px;
+            padding-top: 80px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trabalhando com dados</h1>
+    </header>
+
+    <section>
+        <button onclick="clicar()">Clique para começar</button>
+    </section>
+
+    <footer>
+        <p>&copy; Ailton Henrique</p>
+    </footer>
+
+    <script>
+        function clicar() {
+            let nome = prompt('Qual é seu nome?');
+            alert('Olá ' + nome + ', É um prazer te conhecer!');
+        }
+    </script>
+</body>
+</html>
